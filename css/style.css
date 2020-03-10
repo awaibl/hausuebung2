@@ -6,7 +6,7 @@ body {
     font-size:14px;
     margin: 0 auto;
     padding: 0;
-    max-width: 990px;
+    width: 990px;
 }
 
 .logo {
@@ -71,7 +71,11 @@ ul.level_1 > li:hover > ul.level_2 > li{
     width:100%;
     height:15px;
     z-index: 9998;
-    margin-top: 20px;
+	float: left;
+	margin-left: -12.8%;
+	padding-left: 0;
+	position: absolute;
+
 }
 
 .logo:before {
