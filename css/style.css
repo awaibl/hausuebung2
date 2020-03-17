@@ -4,13 +4,15 @@
 body {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:14px;
-    margin:0;
-    padding:0;
+    margin: 0 auto;
+    padding: 0;
+    width: 990px;
 }
 
 .logo {
     font-size:30px;
     text-transform: uppercase;
+    margin: auto;
 
     background-color:#337ab7;
     color:#fff;
@@ -28,10 +30,51 @@ body {
     margin-bottom:50px;
 }
 
+nav.mainNavi > ul.level_1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.mainNavi > ul.level_1 > li > ul.level_2{
+    padding: 10px 0;
+    list-style: none;
+}
+
+ul.level_1 >li >ul.level_2 >li> a{
+    display: block;
+}
+
+ul.level_1 > li >ul.level_2 >li {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #337ab7;
+    font-weight: bold;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+ul.level_1 >li> a:hover{
+    background-color: #337ab7;
+    color: #fff;
+}
+
+ul.level_1 > li:hover > ul.level_2 > li{
+    display: block;
+}
+
 .stripe {
     background-color:#337ab7;
     width:100%;
     height:15px;
+    z-index: 9998;
+	float: left;
+	margin-left: -12.8%;
+	padding-left: 0;
+	position: absolute;
 
 }
 
@@ -42,15 +85,11 @@ body {
     margin-right:15px;
 }
 
-footer {
+footer{
     background-color:#f8f9fa;
     height: 150px;
     padding-top:20px;
+    margin: auto;
+    width: 100%;
 }
-
-
-
-
-
-
 
